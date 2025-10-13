@@ -19,19 +19,20 @@
       background: #000;
       position: relative;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
     }
 
-    /* GIF фон */
+    /* GIF фон (піднятий вище) */
     body::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: url("AqCa.gif") center center / cover no-repeat;
+      background: url("https://i.gifer.com/AqCa.gif") center top 70% / cover no-repeat;
       filter: brightness(0.7);
       z-index: 0;
     }
 
-    /* Кнопка FS Steam Giveaways */
+    /* Кнопка */
     .custom-btn {
       position: relative;
       z-index: 1;
@@ -63,13 +64,17 @@
   </style>
 </head>
 <body>
-  <button class="custom-btn" onclick="enterSite()">
+  <button class="custom-btn" onclick="openAndClose()">
     FS Steam Giveaways
   </button>
 
   <script>
-    function enterSite() {
-      window.location.href = "main.html"; // або інше посилання на сайт
+    function openAndClose() {
+      window.open(
+        "https://sites.google.com/view/fssteamgiveaways/fs-steam-giveaways",
+        "_blank"
+      );
+      window.close();
     }
   </script>
 </body>
