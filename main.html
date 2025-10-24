@@ -211,140 +211,349 @@
             <span class="text-green-400 font-medium">Безкоштовно</span>
             <a href="https://store.steampowered.com/app/569610/Distant_Space/" 
                class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm transition">Отримати</a>
+          </div>
+         </div>
         </div>
-    </div>
-</div>
-
-      </section>
+       </section>
 
 <!-- Events Section -->
 <section id="events" class="py-12 px-4 bg-gray-900 bg-opacity-50">
-    <div class="container mx-auto">
-        <div class="flex items-center mb-8" data-aos="fade-right">
-            <i data-feather="calendar" class="mr-2 text-purple-400"></i>
-            <h2 class="text-3xl font-normal">Події</h2>
+  <div class="container mx-auto text-center">
+    <!-- Заголовок -->
+    <div class="flex justify-center items-center mb-8" data-aos="fade-up">
+      <i data-feather="calendar" class="mr-2 text-purple-400"></i>
+      <h2 class="text-3xl font-normal">Події</h2>
+    </div>
+
+    <!-- Події -->
+    <div class="grid gap-4 max-w-2xl mx-auto" data-aos="fade-up">
+      
+      <!-- Подія 1 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event1')">
+        <h3 class="text-lg font-medium">Фестиваль політичних симуляторів [Вже Завершився🏁]</h3>
+        <p class="text-gray-400">8 вересня - 15 вересня</p>
+        <div id="event1" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <a href="https://store.steampowered.com/category/political_sim" target="_blank"
+               class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
+              Посилання на фестиваль
+            </a>
+            <a href="https://store.steampowered.com/points/shop/app/3300190" target="_blank"
+               class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition">
+              Предмети з крамниці жетонів
+            </a>
+          </div>
         </div>
-        
-        <div class="grid gap-4" data-aos="fade-up">
-            <!-- Подія 1 -->
-            <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event1')">
-                <h3 class="text-lg font-medium">Фестиваль політичних симуляторів [Вже Завершився🏁]</h3>
-                <p class="text-gray-400">8 вересня - 15 вересня</p>
-                <div id="event1" class="hidden mt-3">
-                    <div class="flex space-x-2">
-                        <a href="https://store.steampowered.com/category/political_sim" target="_blank"
-                           class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
-                            Посилання на фестиваль
-                        </a>
-                        <a href="https://store.steampowered.com/points/shop/app/3300190" target="_blank"
-                           class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition">
-                            Предмети з крамниці жетонів
-                        </a>
-                    </div>
-                </div>
-            </div>
+      </div>
 
-            <!-- Подія 2 -->
-<div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event2')">
-    <h3 class="text-lg font-medium">🍂 Осінній розпродаж [Вже Завершився🏁]</h3>
-    <p class="text-gray-400">29 вересня – 6 жовтня</p>
-    <div id="event2" class="hidden mt-3">
-         <div class="flex space-x-2">
-                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Вже Завершився🏁
-                        </button>
-                        <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Вже Завершився🏁
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <!-- Подія 2 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event2')">
+        <h3 class="text-lg font-medium">🍂 Осінній розпродаж [Вже Завершився🏁]</h3>
+        <p class="text-gray-400">29 вересня – 6 жовтня</p>
+        <div id="event2" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Вже Завершився🏁
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Вже Завершився🏁
+            </button>
+          </div>
+        </div>
+      </div>
 
-            <!-- Подія 3 -->
-       <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event3')">
-       <h3 class="text-lg font-medium">Фестиваль Steam Next Fest [Вже Завершився🏁]</h3>
-      <p class="text-gray-400">13 жовтня - 20 жовтня</p>
-      <div id="event3" class="hidden mt-3">
-        <div class="flex space-x-2 mb-3">
+      <!-- Подія 3 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event3')">
+        <h3 class="text-lg font-medium">Фестиваль Steam Next Fest [Вже Завершився🏁]</h3>
+        <p class="text-gray-400">13 жовтня - 20 жовтня</p>
+        <div id="event3" class="hidden mt-3">
+          <div class="flex justify-center space-x-2 mb-3">
             <a href="https://store.steampowered.com/sale/nextfest" target="_blank" 
                class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
-                Посилання на фестиваль
+              Посилання на фестиваль
             </a>
             <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                Предмети з крамниці жетонів
+              Предмети з крамниці жетонів
             </button>
-        </div>
-        <p class="text-gray-300 text-base">
+          </div>
+          <p class="text-gray-300 text-base">
             Перегляньте майбутні ігри та зіграйте в безкоштовні демоверсії.
-        </p>
-    </div>
-</div>
-
-            <!-- Подія 4 -->
-            <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event4')">
-                <h3 class="text-lg font-medium">Хелловінський розпродаж</h3>
-                <p class="text-gray-400">27 жовтня – 3 листопада</p>
-                <div id="event4" class="hidden mt-3">
-                    <div class="flex space-x-2">
-                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Посилання на фестиваль
-                        </button>
-                        <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Предмети з крамниці жетонів
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Подія 5 -->
-            <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event5')">
-                <h3 class="text-lg font-medium">Фестиваль тварин</h3>
-                <p class="text-gray-400">10 листопада – 17 листопада</p>
-                <div id="event5" class="hidden mt-3">
-                    <div class="flex space-x-2">
-                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Посилання на фестиваль
-                        </button>
-                        <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Предмети з крамниці жетонів
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Подія 6 -->
-            <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event6')">
-                <h3 class="text-lg font-medium">Спортивне свято</h3>
-                <p class="text-gray-400">8 грудня – 15 грудня</p>
-                <div id="event6" class="hidden mt-3">
-                    <div class="flex space-x-2">
-                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Посилання на фестиваль
-                        </button>
-                        <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Предмети з крамниці жетонів
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Подія 7 -->
-            <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event7')">
-                <h3 class="text-lg font-medium">❄️ Зимовий розпродаж</h3>
-                <p class="text-gray-400">18 грудня – 5 січня</p>
-                <div id="event7" class="hidden mt-3">
-                    <div class="flex space-x-2">
-                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Посилання на фестиваль
-                        </button>
-                        <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-                            Предмети з крамниці жетонів
-                        </button>
-                    </div>
-                </div>
-            </div>
+          </p>
         </div>
+      </div>
+
+      <!-- Подія 4 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event4')">
+        <h3 class="text-lg font-medium">Хелловінський розпродаж</h3>
+        <p class="text-gray-400">27 жовтня – 3 листопада</p>
+        <div id="event4" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 5 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event5')">
+        <h3 class="text-lg font-medium">Фестиваль тварин</h3>
+        <p class="text-gray-400">10 листопада – 17 листопада</p>
+        <div id="event5" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 6 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event6')">
+        <h3 class="text-lg font-medium">Спортивне свято</h3>
+        <p class="text-gray-400">8 грудня – 15 грудня</p>
+        <div id="event6" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 7 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event7')">
+        <h3 class="text-lg font-medium">❄️ Зимовий розпродаж</h3>
+        <p class="text-gray-400">18 грудня – 5 січня</p>
+        <div id="event7" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+              <!-- Подія 8 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event8')">
+        <h3 class="text-lg font-medium">Фестиваль Детективів 🕵️</h3>
+        <p class="text-gray-400">12 – 19 січня 2026</p>
+        <div id="event8" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 9 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event9')">
+        <h3 class="text-lg font-medium">Фестиваль Настільних Ігор 🎲</h3>
+        <p class="text-gray-400">26 січня – 2 лютого 2026</p>
+        <div id="event9" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 10 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event10')">
+        <h3 class="text-lg font-medium">Фестиваль Друку ⌨️</h3>
+        <p class="text-gray-400">5 – 9 лютого 2026</p>
+        <div id="event10" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 11 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event11')">
+        <h3 class="text-lg font-medium">Фестиваль Гравець проти Гравця ⚔️</h3>
+        <p class="text-gray-400">9 – 16 лютого 2026</p>
+        <div id="event11" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 12 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event12')">
+        <h3 class="text-lg font-medium">Фестиваль Кінних Ігор 🐎</h3>
+        <p class="text-gray-400">19 – 23 лютого 2026</p>
+        <div id="event12" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 13 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event13')">
+        <h3 class="text-lg font-medium">Next Fest 🎉</h3>
+        <p class="text-gray-400">23 лютого – 2 березня 2026</p>
+        <div id="event13" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 14 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event14')">
+        <h3 class="text-lg font-medium">Фестиваль Захисту Вежі 🏰</h3>
+        <p class="text-gray-400">9 – 16 березня 2026</p>
+        <div id="event14" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 15 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event15')">
+        <h3 class="text-lg font-medium">Весняний Розпродаж 🌸</h3>
+        <p class="text-gray-400">19 – 26 березня 2026</p>
+        <div id="event15" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 16 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event16')">
+        <h3 class="text-lg font-medium">Фестиваль Дому та Інтер’єру 🏡</h3>
+        <p class="text-gray-400">30 березня – 6 квітня 2026</p>
+        <div id="event16" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 17 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event17')">
+        <h3 class="text-lg font-medium">Фестиваль Пошуку Прихованих Об’єктів 🔍</h3>
+        <p class="text-gray-400">9 – 13 квітня 2026</p>
+        <div id="event17" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 18 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event18')">
+        <h3 class="text-lg font-medium">Середньовічний Фестиваль ⚜️</h3>
+        <p class="text-gray-400">20 – 27 квітня 2026</p>
+        <div id="event18" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 19 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event19')">
+        <h3 class="text-lg font-medium">Фестиваль Карткових Колод 🃏</h3>
+        <p class="text-gray-400">4 – 11 травня 2026</p>
+        <div id="event19" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Подія 20 -->
+      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event20')">
+        <h3 class="text-lg font-medium">Фестиваль Моря та Океану 🌊</h3>
+        <p class="text-gray-400">18 – 25 травня 2026</p>
+        <div id="event20" class="hidden mt-3">
+          <div class="flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Посилання на фестиваль
+            </button>
+            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
+              Предмети з крамниці жетонів
+            </button>
+          </div>
+        </div>
+      </div>  
     </div>
+  </div>
 </section>
 
     <!-- Footer -->
