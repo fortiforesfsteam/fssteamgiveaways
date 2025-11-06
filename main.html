@@ -276,30 +276,25 @@
 <section id="events" class="py-12 px-4 bg-gray-900 bg-opacity-50">
   <div class="container mx-auto text-center">
     <!-- Заголовок -->
-    <div class="flex justify-center items-center mb-8 space-x-8" data-aos="fade-up">
-      <button id="toggleCurrentEvents" class="flex items-center text-purple-400 hover:text-purple-300 transition">
+    <div class="flex justify-center items-center mb-8" data-aos="fade-up">
+      <h2 class="text-2xl font-normal text-purple-400 flex items-center">
         <i data-feather="calendar" class="mr-2"></i>
-        <span class="text-2xl font-normal">Майбутні події</span>
-      </button>
-      <button id="togglePastEvents" class="flex items-center text-gray-400 hover:text-white transition">
-        <i data-feather="flag" class="mr-2"></i>
-        <span class="text-2xl font-normal">Завершені події</span>
-      </button>
+        Події
+      </h2>
     </div>
 
-    <!-- Поточні події -->
+    <!-- Майбутні події -->
     <div id="currentEvents" class="grid gap-4 max-w-2xl mx-auto" data-aos="fade-up">
       <!-- Подія 4 -->
       <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event4')">
-        <h3 class="text-lg font-medium">Хелловінський розпродаж [Вже почався✅]</h3>
+        <h3 class="text-lg font-medium">Хелловінський розпродаж [🏁]</h3>
         <p class="text-gray-400">27 жовтня – 3 листопада</p>
         <div id="event4" class="hidden mt-3">
-           <div class="flex justify-center space-x-2">
+          <div class="flex justify-center space-x-2">
             <a href="https://store.steampowered.com/category/scream" target="_blank"
                class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
               Посилання на фестиваль
             </a>
-            </button>
             <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
               Предмети з крамниці жетонів
             </button>
@@ -309,7 +304,7 @@
 
       <!-- Подія 5 -->
       <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event5')">
-        <h3 class="text-lg font-medium">Фестиваль тварин</h3>
+        <h3 class="text-lg font-medium">Фестиваль тварин [Незабаром почнеться🟡]</h3>
         <p class="text-gray-400">10 листопада – 17 листопада</p>
         <div id="event5" class="hidden mt-3">
           <div class="flex justify-center space-x-2">
@@ -562,87 +557,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Завершені події -->
-    <div id="pastEvents" class="hidden grid gap-4 max-w-2xl mx-auto" data-aos="fade-up">
-      <!-- Подія 1 -->
-      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event1')">
-        <h3 class="text-lg font-medium">Фестиваль політичних симуляторів [🏁]</h3>
-        <p class="text-gray-400">8 вересня - 15 вересня</p>
-        <div id="event1" class="hidden mt-3">
-          <div class="flex justify-center space-x-2">
-            <a href="https://store.steampowered.com/category/political_sim" target="_blank"
-               class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
-              Посилання на фестиваль
-            </a>
-            <a href="https://store.steampowered.com/points/shop/app/3300190" target="_blank"
-               class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition">
-              Предмети з крамниці жетонів
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Подія 2 -->
-      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event2')">
-        <h3 class="text-lg font-medium">🍂 Осінній розпродаж [🏁]</h3>
-        <p class="text-gray-400">29 вересня – 6 жовтня</p>
-        <div id="event2" class="hidden mt-3">
-          <div class="flex justify-center space-x-2">
-            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-              Вже Завершився🏁
-            </button>
-            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-              Вже Завершився🏁
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Подія 3 -->
-      <div class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition cursor-pointer" onclick="toggleEventDetails('event3')">
-        <h3 class="text-lg font-medium">Фестиваль Steam Next Fest [🏁]</h3>
-        <p class="text-gray-400">13 жовтня - 20 жовтня</p>
-        <div id="event3" class="hidden mt-3">
-          <div class="flex justify-center space-x-2 mb-3">
-            <a href="https://store.steampowered.com/sale/nextfest" target="_blank" 
-               class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
-              Посилання на фестиваль
-            </a>
-            <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm cursor-not-allowed opacity-70">
-              Предмети з крамниці жетонів
-            </button>
-          </div>
-          <p class="text-gray-300 text-base">
-            Перегляньте майбутні ігри та зіграйте в безкоштовні демоверсії.
-          </p>
-        </div>
-      </div>
-  </div>
 </section>
-
-<!-- JS для перемикання подій -->
-<script>
-  const toggleCurrentEvents = document.getElementById('toggleCurrentEvents');
-  const togglePastEvents = document.getElementById('togglePastEvents');
-  const currentEvents = document.getElementById('currentEvents');
-  const pastEvents = document.getElementById('pastEvents');
-
-  toggleCurrentEvents.addEventListener('click', () => {
-    currentEvents.classList.remove('hidden');
-    pastEvents.classList.add('hidden');
-    toggleCurrentEvents.classList.replace('text-gray-400', 'text-purple-400');
-    togglePastEvents.classList.replace('text-purple-400', 'text-gray-400');
-  });
-
-  togglePastEvents.addEventListener('click', () => {
-    currentEvents.classList.add('hidden');
-    pastEvents.classList.remove('hidden');
-    togglePastEvents.classList.replace('text-gray-400', 'text-purple-400');
-    toggleCurrentEvents.classList.replace('text-purple-400', 'text-gray-400');
-  });
-</script>
-
 
     <!-- Footer -->
     <footer class="bg-gray-900 py-8 px-4">
